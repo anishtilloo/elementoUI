@@ -1,0 +1,23 @@
+<template>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <h3>
+                            heading
+                        </h3>
+                    </div>
+                    <div>
+                        info
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
