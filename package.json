@@ -1,5 +1,5 @@
 {
-  "name": "component-lib",
+  "name": "@elemento/ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,11 +9,13 @@
     ".": {
       "import": "./dist/component-lib.js",
       "require": "./dist/component-lib.umd.cjs"
-    }
+    },
+    "./styles.css": "./dist/style.css"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run watch",
     "build": "vue-tsc --declaration --emitDeclarationOnly && vite build && cp package.json dist/",
+    "watch": "vue-tsc --declaration --emitDeclarationOnly --watch & vite build --watch",
     "preview": "vite preview"
   },
   "dependencies": {
