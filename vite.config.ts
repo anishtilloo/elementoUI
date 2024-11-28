@@ -26,10 +26,8 @@ export default defineConfig({
     dts({
       outDir: 'dist',
       insertTypesEntry: true,
-      // include: ['src/components/**/*.vue', 'src/main.ts'],
-      // exclude: [],
       tsconfigPath: './tsconfig.app.json',
-      // rollupTypes: true,
+      rollupTypes: true,
       cleanVueFileName: true,
     }),
     vue(),
