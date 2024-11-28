@@ -3,23 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
   "main": "./dist/component-lib.umd.cjs",
   "module": "./dist/component-lib.js",
   "exports": {
     ".": {
       "import": "./dist/component-lib.js",
-      "require": "./dist/component-lib.umd.cjs",
-      "types": "./dist/main.d.ts"
+      "require": "./dist/component-lib.umd.cjs"
     }
   },
-  "types": "./dist/main.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "build1": "vue-tsc --declaration --emitDeclarationOnly && vite build",
+    "build": "vue-tsc --declaration --emitDeclarationOnly && vite build && cp package.json dist/",
     "preview": "vite preview"
   },
   "dependencies": {
